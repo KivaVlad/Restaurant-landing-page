@@ -460,7 +460,7 @@ button {
 }
 
 .burgers_image {
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
 .burger_text {
@@ -495,10 +495,10 @@ button {
 .menu-item {
     background-color: #fff;
     text-align: center;
-    width: 33%;
+    width: 30%;
     padding-top: 80px;
     padding-bottom: 40px;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .menu_text {
@@ -778,7 +778,7 @@ button {
 
     .menu-item {
         margin: 20px auto;
-        width: 450px;
+        width: 30%;
     }
 
     .header-title {
@@ -826,9 +826,14 @@ button {
     .header-line {
         justify-content:space-around;
     }
-    
+
     .burger_menu {
         display: block;
+    }
+
+    .menu-item {
+        margin: 20px auto;
+        width: 35%;
     }
 
     .nav, .cart, .phone, .btn {
@@ -855,6 +860,11 @@ button {
     }
     .cards_holder {
         display: block;
+    }
+
+    .menu-item {
+        margin: 20px auto;
+        width: 40%;
     }
 
     .card {
@@ -887,7 +897,8 @@ button {
     }
 
     .menu-item {
-        width: auto;
+        display: block;
+        justify-content: center;
     }
 
     .high {
@@ -896,6 +907,11 @@ button {
 
     .container {
         margin: auto 40px;
+    }
+
+    .menu-item {
+        margin: 20px auto;
+        width: 50%;
     }
 
     .history_number{
@@ -916,6 +932,22 @@ button {
     }
 
     .header_button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .header_suptitle {
+        padding-top: 10px;
+    }
+
+    .menu_items {
+        display: block;
+        justify-content: center;
+    }
+
+    .menu-item {
+        margin: 20px auto;
         width: 100%;
     }
 }
