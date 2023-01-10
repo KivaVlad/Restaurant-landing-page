@@ -84,7 +84,8 @@ body {
 }
 
 .container {
-    margin: 0px 166px;
+    max-width: 1160px;
+    margin: 0 auto;
 }
 
 /* Header styles start */
@@ -98,6 +99,7 @@ body {
 .header-line {
     padding-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
@@ -151,6 +153,7 @@ body {
 
 .phone-holder {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -260,11 +263,12 @@ button {
 /* Cards start */
 .cards_holder {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .card {
-    width: 349px;
+    width: 320px;
     margin-right: 31px;
     box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -274,12 +278,14 @@ button {
 
 .card_image {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-top: 15px;
 }
 
 .card_title {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-family: 'Tinos', serif;
     font-weight: 400;
@@ -309,6 +315,7 @@ button {
 
 .history_holder {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -337,6 +344,7 @@ button {
 
 .history_number {
     display: flex;
+    flex-wrap: wrap;
     width: 444px;
     justify-content: center;
     margin-top: 40px;
@@ -412,6 +420,7 @@ button {
 
 .black_holder {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -439,11 +448,13 @@ button {
 
 .burgers {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .burger-item {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 29px;
 }
@@ -550,6 +561,7 @@ button {
 
 .menu_items {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 /* Menu end */
@@ -616,6 +628,7 @@ button {
 
 .galery_content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -625,6 +638,7 @@ button {
 
 .galery-down, .galery_up {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
 }
@@ -652,6 +666,7 @@ button {
 
 .cook_content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 /* Cook end*/
@@ -808,6 +823,10 @@ button {
 }
 
 @media (max-width: 1185px) {
+    .header-line {
+        justify-content:space-around;
+    }
+    
     .burger_menu {
         display: block;
     }
@@ -831,6 +850,9 @@ button {
 }
 
 @media (max-width: 1000px) {
+    .header-line {
+        justify-content:space-around;
+    }
     .cards_holder {
         display: block;
     }
@@ -876,8 +898,13 @@ button {
         margin: auto 40px;
     }
 
+    .history_number{
+        display: block;
+    }
+
     .number_item {
         font-size: 23px;
+        margin-top: 20px;
     }
 
     .header-title {
